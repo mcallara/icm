@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import misc
 
-class matriz(object):
+class matrix(object):
 	@staticmethod
 	def Energy(xi,xj,yi,h,eta,beta):
 		E=h*xi-eta*xi*yi-sum(beta*xj*xi)
@@ -60,7 +60,7 @@ X2=misc.imread('img2.png')
 X2=X2.astype(int)
 X2[X2==0]=-1
 X2[X2==255]=1
-imagen=matriz(X2,X2)
+imagen=matrix(X2,X2)
 
 h=0
 eta=2.1
